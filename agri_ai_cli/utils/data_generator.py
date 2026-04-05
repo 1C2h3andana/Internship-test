@@ -429,7 +429,7 @@ def generate_market_data(crop="rice", months=24):
         trend = m * base * 0.005
         noise = random.gauss(0, base * 0.05)
         price = base + seasonal + trend + noise
-        prices.append(max(price * 0.5, price))
+        prices.append(max(base * 0.5, price))
     return prices
 
 
