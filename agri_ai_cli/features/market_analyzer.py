@@ -145,7 +145,7 @@ class MarketAnalyzer:
             smoothed.append(alpha * prices[i] + (1 - alpha) * smoothed[-1])
 
         # Trend component
-        trend_val = (smoothed[-1] - smoothed[max(0, -6)]) / min(6, n)
+        trend_val = (smoothed[-1] - smoothed[max(0, n - 6)]) / min(6, n)
 
         forecasted = []
         last = smoothed[-1]
