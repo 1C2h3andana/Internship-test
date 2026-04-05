@@ -512,7 +512,7 @@ class DecisionTreeRegressor:
             values = sorted(set(d[0][feat_idx] for d in data))
             # Sample thresholds for speed
             if len(values) > 20:
-                values = random.sample(values, 20)
+                values = sorted(random.sample(values, 20))
             for i in range(len(values) - 1):
                 threshold = (values[i] + values[i + 1]) / 2
                 left = [d for d in data if d[0][feat_idx] <= threshold]
