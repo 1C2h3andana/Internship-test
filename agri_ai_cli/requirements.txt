@@ -1,0 +1,7 @@
+# AgriAI CLI v3.0 - No external dependencies required!
+# Built entirely with Python standard library.
+# Python 3.6+ required.
+#
+# Optional (for enhanced ML if available):
+# scikit-learn>=1.0
+# numpy>=1.20

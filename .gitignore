@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pyo
+agri_ai_cli/data/*.json
+agri_ai_cli/data/exports/
+.pytest_cache/
